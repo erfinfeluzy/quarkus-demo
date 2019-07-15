@@ -1,3 +1,9 @@
 target/**
 **/target/**
 target/**/**
+.project
+**/.DS_Store/**
+.settings/**
+.mvn/**
+.classpath
+.dockerignore
