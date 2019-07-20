@@ -11,6 +11,7 @@ mvn io.quarkus:quarkus-maven-plugin:0.19.1:create \
  ```   
     
 ## Run in DEV mode
+
 ```bash
 mvn compile quarkus:dev:
 ```
