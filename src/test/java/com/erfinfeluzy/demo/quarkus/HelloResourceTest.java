@@ -15,7 +15,7 @@ public class HelloResourceTest {
           .when().get("/hello")
           .then()
              .statusCode(200)
-             .body(is("hello world quarkus try hot reload"));
+             .body(is("hello"));
     }
 
 }
