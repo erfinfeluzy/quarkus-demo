@@ -13,4 +13,11 @@ public class HelloResource {
     public String hello() {
         return "hello";
     }
+    
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("world")
+    public String world() {
+        return "hello world";
+    }
 }
