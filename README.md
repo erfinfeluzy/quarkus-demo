@@ -12,7 +12,7 @@ mvn io.quarkus:quarkus-maven-plugin:0.19.1:create \
     
 ## Run in DEV mode
 ```bash
-./mvnw compile quarkus:dev:
+mvn compile quarkus:dev:
 ```
 
 ## Test Locally (with Java Runtime)
@@ -34,12 +34,12 @@ Change java class
 
 ## Build as native GraalVM apps
 ```bash
-./mvnw package -Pnative
+mvn package -Pnative
 ```
 
 ## Package as Container Image
 ```bash
-./mvnw package -Pnative -Dnative-image.docker-build=true
+mvn package -Pnative -Dnative-image.docker-build=true
 ```
 
 ```bash
