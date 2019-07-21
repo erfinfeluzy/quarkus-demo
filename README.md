@@ -50,6 +50,8 @@ mvn package -Pnative
 ```bash
 mvn package -Pnative -Dnative-image.docker-build=true
 ```
+Note: i need to increase local docker memory due to OutOfMemoryError during building
+
 
 ```bash
 docker build -f src/main/docker/Dockerfile.native -t quarkus/quarkus-project .
@@ -64,13 +66,13 @@ docker run -i --rm -p 8080:8080 quarkus/quarkus-project
 ## Push to Quay.io
 
 ```bash
-docker tag quarkus/quarkus-project quay.io/efeluzy/quarkus-demo:latest
+docker tag quarkus/quarkus-project quay.io/efeluzy/quarkus-demo-orm:latest
 
-docker push quay.io/efeluzy/quarkus-demo:latest
+docker push quay.io/efeluzy/quarkus-demo-orm:latest
 ```
 
 ## Deploy to Openshift
 ### Via Web Console
-1. Add To Project > Deploy Image > Image Name > quay.io/efeluzy/quarkus-demo:latest
+1. Add To Project > Deploy Image > Image Name > quay.io/efeluzy/quarkus-demo-orm:latest
 2. Click Search, Select project
 3. Click Deploy
