@@ -2,6 +2,14 @@
 
 ## Generate Project Skeleton
 
+Clone sample source code from
+
+```bash
+git clone https://github.com/erfinfeluzy/quarkus-demo.git 
+ ``` 
+ 
+Or, generate from project skeleton
+
 ```bash
 mvn io.quarkus:quarkus-maven-plugin:0.19.1:create \
     -DprojectGroupId=com.erfinfeluzy.demo.quarkus \
