@@ -38,7 +38,10 @@ public class HelloResource {
     @Transactional
     public Student save(@PathParam String name) {
     	
-    	Student student = new Student(name);
+    	System.out.println(name);
+    	
+    	Student student = new Student();
+    	student.name = name;
     	student.persist();
     	
     	return student;
