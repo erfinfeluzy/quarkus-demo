@@ -39,7 +39,7 @@ Change java class
 ## Build Native Image on GraalVM
 
 ### Prerequsite
-1. Install GraalVM, set $GRAALVM_HOME
+1. Install [GraalVM](https://www.graalvm.org/docs/getting-started/), set $GRAALVM_HOME
 
 ## Build as native GraalVM apps
 ```bash
