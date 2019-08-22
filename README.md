@@ -23,10 +23,14 @@ mvn io.quarkus:quarkus-maven-plugin:0.19.1:create \
 ```bash
 mvn compile quarkus:dev:
 ```
+run on different port
+```bash
+mvn compile quarkus:dev: -Dquarkus.http.port=8081
+```
 
 ## Test Locally (with Java Runtime)
 ```bash
-$ curl localhost:8080/hello
+$ curl localhost:8080/api
 ```
 
 ```bash
@@ -34,7 +38,7 @@ hello
 ```
 
 ## Try Hot Reload
-Change java class
+Change java class, then Quarkus will hot deploy it.
 
 ## Build Native Image on GraalVM
 
