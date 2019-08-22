@@ -1,4 +1,4 @@
-# quarkus-demo
+# Quarkus Tutorial on Openshift
 
 ## Generate Project Skeleton
 
