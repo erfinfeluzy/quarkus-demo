@@ -1,4 +1,4 @@
-# Quarkus Tutorial on Openshift
+# Quarkus Tutorial with Panache ORM on Openshift
 
 ## Generate Project Skeleton
 
