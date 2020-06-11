@@ -52,7 +52,7 @@ mvn package -Pnative
 
 ## Package as Container Image
 ```bash
-mvn package -Pnative -Dnative-image.docker-build=true
+mvn clean package -Dnative -Dquarkus.native.container-build=true
 ```
 Note: i need to increase local docker memory due to OutOfMemoryError during building
 
